@@ -9,6 +9,12 @@ use async_trait::async_trait;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 
+// Re-export main types from submodules
+pub use engine::SolverEngine;
+pub use matching::{MatchingEngine, OrderMatch, MatchType};
+pub use routing::{RoutingEngine, LiquidityPool, PoolType, Route};
+pub use pricing::{PricingEngine, ClearingPrice, PricingStrategy};
+
 /// Solver configuration
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SolverConfig {
