@@ -172,7 +172,7 @@ mod tests {
     }
 
     #[test]
-    fn test_is_zero_true_false() {
+    fn test_is_zero_returns_true_for_zero_and_false_for_nonzero() {
         let zero = TokenAmount::new(U256::from(0), 8);
         let non_zero = TokenAmount::new(U256::from(1), 8);
         assert!(zero.is_zero());
