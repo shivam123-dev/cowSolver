@@ -213,7 +213,6 @@ mod tests {
 #[cfg(test)]
 mod extra_orders_tests {
     use super::*;
-    use ethers::types::{Address, U256};
     use serde_json;
 
     fn base_order() -> Order {
