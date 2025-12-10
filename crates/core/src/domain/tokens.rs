@@ -171,7 +171,7 @@ mod tests {
         assert_eq!(result.raw, U256::from(50));
     }
 
-        #[test]
+    #[test]
     fn test_is_zero_true_false() {
         let zero = TokenAmount::new(U256::from(0), 8);
         let non_zero = TokenAmount::new(U256::from(1), 8);
